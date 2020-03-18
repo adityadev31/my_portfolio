@@ -1,0 +1,752 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100vw;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: rgba(255, 249, 240, 0.527);
+}
+
+
+
+/*...............NAVBAR.................*/
+
+
+.android-nav{
+    display: none;
+}
+.mynav{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    animation-name: change-color;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    transition: background ease-in 1s;
+}
+@keyframes change-color{
+    from{
+        background: linear-gradient(63deg, rgb(197, 27, 55), rgb(167, 7, 167), purple);
+    }
+    to{
+        background: linear-gradient(63deg, rgb(27, 177, 197), rgb(7, 122, 167), rgb(0, 45, 128));
+    }
+}
+.logo{
+    color: rgba(255, 255, 255, 0.726);
+    font-size: 50px;
+    font-weight: 700;
+}
+.link-box{
+    overflow: hidden;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link-box a{
+    color: rgba(255, 255, 255, 0.726);
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    transition: all ease-in-out 0.3s;
+}
+.link-box a:hover{
+    color: #fff;
+}
+
+
+
+
+
+/*.................................................*/
+
+
+
+/*............HERO............................*/
+
+.side-hero{
+    position: fixed;
+    top: 120px;
+    left: 0px;
+    z-index: 555;
+    width: 30%;
+    height: calc(100vh - 120px);
+    text-align: center;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2), 0px 6px 12px 0px rgba(0,0,0,0.19);
+    background-image: url('../images/17580.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero-img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin: 40px auto;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2), 0px 6px 12px 0px rgba(0,0,0,0.19);
+    background-image: url('../images/IMG_20180724_133814669_HDR-01-01-01.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero-heading h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+.hero-heading p{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+
+
+
+
+/*.......................ABOUT........................*/
+
+
+
+.about-hero{
+    width: 100vw;
+    height: 100vh;
+    padding-left: calc(30% + 40px);
+    padding-right: 40px;
+    padding-top: calc(122px + 70px);
+    padding-bottom: 50px;
+}
+.about-hero h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+    padding-bottom: 30px;
+    color: rgba(0, 0, 0, 0.719);
+    position: relative;
+}
+.about-hero h1::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: #ccc;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.about-hero p{
+    width: 700px;
+    margin: 10px auto;
+    font-size: 20px;
+    line-height: 37px;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+    color: rgb(112, 112, 112);
+}
+
+
+
+
+/*.............................................................*/
+
+/*.......................PROJECTS............................*/
+
+.hero-projects{
+    width: 100vw;
+    height: 100vh;
+    padding-left: calc(30% + 40px);
+    padding-right: 40px;
+    padding-top: calc(122px + 70px);
+    padding-bottom: 50px;
+    background-color: #000;
+}
+.hero-projects h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.644);
+}
+.myprojects{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.432);
+}
+.myprojects-left{
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.myprojects-right{
+    width: 55%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myprojects-left img{
+    width: 80%;
+}
+.myprojects-right-content{
+    width: 80%;
+    height: 60%;
+}
+.myprojects-right-content h2{
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 40px;
+}
+.myprojects-right-content p{
+    margin-top: 20px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    padding-left: 80px;
+}
+
+
+
+/*.........HERO SKILLS........*/
+
+.hero-skills{
+    width: 100vw;
+    min-height: 100vh;
+    padding-left: calc(30% + 40px);
+    padding-right: 40px;
+    padding-top: calc(122px + 50px);
+    padding-bottom: 50px;
+}
+.hero-skills h1{
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 30px;
+    color: rgba(0, 0, 0, 0.671);
+}
+.hero-skills h1::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: #ccc;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.languages{
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.language-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 10%;
+    margin: 20px auto;
+    color: rgba(99, 99, 99, 0.507);
+}
+.fa-java{
+    font-size: 200px;
+    transform: rotate(-20deg);
+    transition: all ease 0.4s;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+.fa-java:hover{
+    color: rgb(226, 147, 0);
+}
+
+.fa-python{
+    font-size: 100px;
+    transform: rotate(20deg);
+    transition: all ease 0.4s;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+.fa-python:hover{
+    color: rgb(0, 141, 197);
+}
+
+.fa-android{
+    font-size: 80px;
+    transition: all ease 0.4s;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+.fa-android:hover{
+    color: rgb(109, 218, 0);
+}
+
+.fa-js-square{
+    font-size: 150px;
+    transform: rotate(45deg);
+    transition: all ease 0.4s;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+.fa-js-square:hover{
+    color: rgb(255, 230, 0);
+}
+
+.fa-adobe{
+    font-size: 70px;
+    transform: rotate(-20deg);
+    transition: all ease 0.4s;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+.fa-adobe:hover{
+    color: red;
+}
+
+.fa-html5{
+    font-size: 150px;
+    transform: rotate(20deg);
+    transition: all ease 0.4s;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+.fa-html5:hover{
+    color: darkorange;
+}
+
+.fa-css3-alt{
+    font-size: 70px;
+    transform: rotate(0deg);
+    transition: all ease 0.4s;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+.fa-css3-alt:hover{
+    color: rgb(0, 156, 218);
+}
+
+.fa-bootstrap{
+    font-size: 150px;
+    transform: rotate(30deg);
+    transition: all ease 0.4s;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+.fa-bootstrap:hover{
+    color: rgb(86, 0, 156);
+}
+
+
+
+
+
+
+/*......CONTACT HERO.........*/
+
+.hero-contact{
+    width: 100vw;
+    min-height: 300px;
+    padding-left: calc(30% + 40px);
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    transition: background ease-in 5s;
+    animation-name: change-color;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+.contact-upper{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-upper-left{
+    width: 50%;
+    height: 80%;
+    padding: 10px 30px 10px 30px;
+}
+.contact-upper-right{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-upper-left h2{
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.719);
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.contact-upper-left h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: #ccc;
+    bottom: 0;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+.contact-upper-left p{
+    color: rgba(255, 255, 255, 0.719);
+    font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+.contact-upper-right a{
+    color: rgba(255, 255, 255, 0.719);
+    font-size: 50px;
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+.contact-upper-right a:hover{
+    font-size: 70px;
+    color: #fff;
+}
+.contact-lower{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    color: rgba(255, 255, 255, 0.719);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*........................TAB.......................*/
+
+@media only screen and (max-width: 1170px){
+    .mynav{
+        display: none;
+    }
+    .android-nav{
+        display: block;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        overflow: hidden;
+        animation-name: change-color;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        transition: background ease-in 1s;
+    }
+    .android-nav-upper{
+        width: 100%;
+        position: relative;
+        padding: 50px 50px;
+    }
+    .android-nav-upper h1{
+        position: absolute;
+        margin-top: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .android-nav-upper .android-toggler{
+        width: 50px;
+        height: 30px;
+        position: absolute;
+        margin-top: 10px;
+        top: 50%;
+        right: 0%;
+        transform: translate(-50%, -50%);
+    }
+    .bars{
+        height: 2px;
+        border-radius: 10px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
+        background-color: rgba(255, 255, 255, 0.726);
+    }
+    .bar-1{
+        width: 40%;
+        top: 10%;
+    }
+    .bar-2{
+        width: 70%;
+        top: 50%;
+    }
+    .bar-3{
+        width: 50%;
+        bottom: 10%;
+    }
+    .android-nav-lower{
+        overflow: hidden;
+        width: 100%;
+        height: 0px;
+        padding: 0px;
+        margin: 0;
+        transition: all linear .5s;
+        text-align: center;
+    }
+    .android-nav-lower a{
+        display: block;
+        width: 100%;
+        padding: 20px;
+        color: rgba(255, 255, 255, 0.726);
+        font-size: 20px;
+        text-decoration: none;
+        letter-spacing: 3px;
+        transition: all ease-in-out 0.3s;
+    }
+    .android-nav-lower a:hover{
+        color: #fff;
+    }
+    .android-nav-lower.active{
+        height: 378px;
+        padding: 10px;
+    }
+    .bar-1.active{
+        width: 70%;
+        top: 50%;
+        transform: rotate(135deg);
+    }
+    .bar-2.active{
+        width: 70%;
+        top: 50%;
+        opacity: 0;
+    }
+    .bar-3.active{
+        width: 70%;
+        top: 50%;
+        transform: rotate(-135deg);
+    }
+}
+
+
+
+
+
+
+
+/*.....................ANDROID.....................*/
+
+@media only screen and (max-width: 500px) and (orientation: portrait){
+    
+    .android-nav-upper{
+        width: 100%;
+        position: relative;
+        padding: 20px 20px 10px 20px;
+    }
+    .android-nav-upper h1{
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .android-nav-upper .android-toggler{
+        width: 35px;
+        height: 20px;
+        position: absolute;
+        margin-top: 5px;
+        top: 50%;
+        right: 0%;
+        transform: translate(-50%, -50%);
+    }
+    .android-nav-lower a{
+        padding: 20px 0PX;
+        font-size: 16px;
+    }
+
+
+    .side-hero{
+        position: initial;
+        z-index: 555;
+        width: 100%;
+        height: 100vh;
+        padding-top: 80px;
+    }
+    .hero-img{
+        margin: 10vh auto 5vh auto;
+    }
+    .hero-heading p{
+        margin-top: 20px;
+    }
+
+
+    .about-hero{
+        width: 100vw;
+        height: auto;
+        padding-top: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    .about-hero h1{
+        font-size: 30px;
+        font-weight: 700 !important;
+        margin-bottom: 30px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 2px #ccc;
+    }
+    .about-hero p{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        margin: 0px auto;
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 1.5px;
+        word-spacing: 3px;
+        color: rgb(112, 112, 112);
+    }
+
+
+
+    .hero-projects{
+        width: 100vw;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 100px;
+        padding-bottom: 10px;
+    }
+    .hero-projects h1{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .myprojects{
+        width: 100%;
+        height: 70vh;
+        display: block;
+    }
+    .myprojects-left{
+        width: 100%;
+        height: 40%;
+    }
+    .myprojects-right{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .myprojects-left img{
+        width: 50%;
+    }
+    .myprojects-right-content{
+        width: 90%;
+        height: 100%;
+    }
+    .myprojects-right-content h2{
+        text-align: center;
+        font-weight: 700;
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 30px;
+    }
+    .myprojects-right-content p{
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+        letter-spacing: 2px;
+        word-spacing: 3px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    
+
+
+    .hero-skills{
+        width: 100vw;
+        min-height: 100vh;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 100px;
+        padding-bottom: 10px;
+    }
+    
+    .hero-skills h1{
+        font-size: 30px;
+    }
+
+
+
+
+
+    .hero-contact{
+        width: 100vw;
+        min-height: 300px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+    .contact-upper{
+        position: relative;
+        display: block;
+    }
+    .contact-upper-left{
+        width: 100%;
+        height: auto;
+        padding: 10px 30px 10px 30px;
+    }
+    .contact-upper-right{
+        width: 100%;
+        height: auto;
+        padding: 10px 30px 10px 30px;
+    }
+    .contact-upper-left h2::after{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 200px;
+        height: 1px;
+        background-color: #ccc;
+        bottom: 0;
+        left: 35%;
+        transform: translate(-50%, -50%);
+    }
+    .contact-upper-left p{
+        color: rgba(255, 255, 255, 0.719);
+        font-size: 18px;
+        letter-spacing: 2px;
+        word-spacing: 3px;
+    }
+    
+    
+}
+
+/*.................................................*/

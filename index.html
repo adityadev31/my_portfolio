@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- FONT-AWESOME -->
+    <script src="https://kit.fontawesome.com/17c67bee6e.js" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- LINKS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Home</title>
+</head>
+<body>
+    
+    <!-- COLLAPSE NAV -->
+
+    <section class="container-fluid android-nav px-5 py-4">
+        <div class="android-nav-upper">
+            <h1 class="logo">PORTFOLIO</h1>
+            <div class="android-toggler">
+                <div class="bars bar-1"></div>
+                <div class="bars bar-2"></div>
+                <div class="bars bar-3"></div>
+            </div>
+        </div>
+        <div class="android-nav-lower">
+            <a class="nav-lower-links" href="#home">HOME</a>
+            <a class="nav-lower-links" href="#about">ABOUT</a>
+            <a class="nav-lower-links" href="#projects">PROJECTS</a>
+            <a class="nav-lower-links" href="#skills">SKILLS</a>
+            <a class="nav-lower-links" href="#contact">CONTACT</a>
+        </div>
+    </section>
+
+    <!-- NORMAL NAV -->
+
+    <section class="container-fluid mynav px-5 py-4">
+        <div class="logo">PORTFOLIO</div>
+        <div class="link-box">
+            <a href="#about">HOME</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </section>
+
+
+
+    <section class="side-hero" id="home">
+        <div class="hero-img"></div>
+        <div class="hero-heading">
+            <h2>Hi.. This is</h2>
+            <h2>Aditya Dev</h2>
+            <p class="px-3">A Programmer &bull; Developer &bull; Tech Enthusiast</p>
+        </div>
+    </section>
+
+
+
+    <section class="about-hero" id="about">
+        <h1 class="text-center">ABOUT ME</h1>
+        <p data-aos="fade-up">Currently, I'm studying software engineering in Delhi Technological University (DTU). I am a java programmer but I'm also very good in C/C++ and python programming. </p>
+        <br>
+        <p data-aos="fade-left">I am an artist too <i class="fas fa-paint-brush"></i> , hence I love to reflect my designing skills using Web-Designing. I am a tech enthusiast and always remain super excited towards new gadgets and devices. Apart from all these, I am very fond of listening classical music and love to play guitar <i class="fas fa-guitar"></i> . I am also a good photographer and editor and I never left any chance to capture good memories!! <i class="far fa-grin-beam"></i></p>
+    </section>
+
+
+
+    <section class="hero-projects" id="projects">
+        <h1>PROJECTS</h1>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="myprojects">
+                    <div class="myprojects-left">
+                        <img src="images/project-3.png" alt="">
+                    </div>
+                    <div class="myprojects-right">
+                        <div class="myprojects-right-content">
+                            <h2>Web Development</h2>
+                            <p>&bullet; Modern Designing</p>
+                            <p>&bullet; Responsive Pages</p>
+                            <p>&bullet; Backend in php, mysql</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="myprojects">
+                    <div class="myprojects-left">
+                        <img src="images/project-2.png" alt="">
+                    </div>
+                    <div class="myprojects-right">
+                        <div class="myprojects-right-content">
+                            <h2>Android Development</h2>
+                            <p>&bullet; Custom Designing</p>
+                            <p>&bullet; Beautiful layouts</p>
+                            <p>&bullet; Backend in Java</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="myprojects">
+                    <div class="myprojects-left">
+                        <img src="images/project-1.png" alt="">
+                    </div>
+                    <div class="myprojects-right">
+                        <div class="myprojects-right-content">
+                            <h2>Software Development</h2>
+                            <p>&bullet; Software Designing</p>
+                            <p>&bullet; Software Testing</p>
+                            <p>&bullet; Object Oriented Approach</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+
+
+    <section class="hero-skills" id="skills">
+        <h1>SKILLS</h1>
+        <div class="row languages">
+            <div data-aos="fade-up" title="Java" class="language-box col-md-3 col-12">
+                <i class="fab fa-java"></i>
+            </div>
+            <div data-aos="fade-left" title="Python" class="language-box col-md-3 col-12">
+                <i class="fab fa-python"></i>
+            </div>
+            <div data-aos="fade-down" title="Android" class="language-box col-md-3 col-12">
+                <i class="fab fa-android"></i>
+            </div>
+            <div data-aos="fade-right" title="JavaScript" class="language-box col-md-3 col-12">
+                <i class="fab fa-js-square"></i>
+            </div>
+            <div data-aos="fade-left" title="Adobe" class="language-box col-md-3 col-12">
+                <i class="fab fa-adobe"></i>
+            </div>
+            <div data-aos="fade-up" title="HTML 5" class="language-box col-md-3 col-12">
+                <i class="fab fa-html5"></i>
+            </div>
+            <div data-aos="fade-right" title="CSS 3" class="language-box col-md-3 col-12">
+                <i class="fab fa-css3-alt"></i>
+            </div>
+            <div data-aos="fade-down" title="Bootstrap" class="language-box col-md-3 col-12">
+                <i class="fab fa-bootstrap"></i>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section class="hero-contact" id="contact">
+        <div class="contact-upper">
+            <div class="contact-upper-left">
+                <h2>Contact Me</h2>
+                <p>Email <i class="fa fa-envelope" aria-hidden="true"></i> - aditya.aditya.10201@gmail.com</p>
+                <p>Contact no. <i class="fa fa-phone" aria-hidden="true"></i> - 8178880314</p>
+            </div>
+            <div class="contact-upper-right">
+                <a href="https://www.facebook.com/aditya.dev.14289" target="blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/aditya.dev.31/" target="blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/AdiTya-Dev31/" target="blank"><i class="fab fa-github-square"></i></i></a>
+            </div>
+        </div>
+        <hr style="background-color: rgba(255, 255, 255, 0.419);">
+        <div class="contact-lower">
+            <p>Website Designed by AdiTya Dev | &copy; copyright 2020</p>
+        </div>
+    </section>
+
+
+
+    <script>
+        $(document).ready(function(){
+            $('.android-toggler').click(function(){
+                $('.android-nav-lower').toggleClass('active');
+                $('.bar-1').toggleClass('active');
+                $('.bar-2').toggleClass('active');
+                $('.bar-3').toggleClass('active');
+            });
+            $('.nav-lower-links').click(function(){
+                $('.android-nav-lower').removeClass('active');
+                $('.bar-1').removeClass('active');
+                $('.bar-2').removeClass('active');
+                $('.bar-3').removeClass('active');
+            });
+        });
+    </script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+</html>
